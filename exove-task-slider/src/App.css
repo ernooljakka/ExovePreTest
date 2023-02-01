@@ -1,0 +1,41 @@
+/* Styling the contents of the page */ 
+
+.content {
+  text-align: center;
+  position: relative;
+  height: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  top: 100px;
+  margin: 0px 100px 0px 100px;
+  background-color:rgb(68, 58, 139);
+  border: solid red;
+  box-shadow: 2px 4px rgb(215, 68, 68);
+}
+
+h1 {
+  color: aliceblue;
+  user-select:none;
+  font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+  position: relative;
+  top: 50px;
+  color: aliceblue;
+  user-select:none;
+  font-family:'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+  padding-top: 30px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.App {
+  background-color: aquamarine;
+  height: 800px;
+}
