@@ -1,0 +1,14 @@
+SELECT first_name || ' ' || last_name AS name, COALESCE(GROUP_CONCAT(number), 'N/A') AS numbers FROM people
+LEFT JOIN phones ON people.id = phones.user_id
+GROUP BY name
+ORDER BY name
+
+
+----
+I used SQLite for quering and SQLite uses || for concetenate strings but more common way is to use CONCAT-function.
+With CONCAT function the first line I believe would be ->
+SELECT CONCAT(first_name, ' ', last_name) AS name, COALESCE(GROUP_CONCAT(number), 'N/A') AS numbers FROM people
+
+Also every row from that query is correct but I wasn't able to find a way to order them exactly as in the example so I ordered them by name
+as I feel that is the best way to find the correct persons number if it was actually a real life situation.
+----
